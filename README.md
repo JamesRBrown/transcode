@@ -22,8 +22,8 @@ A minimal-dependency Python script to batch-transcode video files using `HandBra
 ## Installation
 
 ```bash
-chmod +x handbrake_wrapper.py
-sudo mv handbrake_wrapper.py /usr/local/bin/transcode
+chmod +x transcode.py
+sudo mv transcode.py /usr/local/bin/transcode
 ```
 
 ## Usage
