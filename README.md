@@ -23,7 +23,7 @@ A minimal-dependency Python script to batch-transcode video files using `HandBra
 
 ```bash
 chmod +x handbrake_wrapper.py
-sudo mv handbrake_wrapper.py /usr/local/bin/hbconvert
+sudo mv handbrake_wrapper.py /usr/local/bin/transcode
 ```
 
 ## Usage
@@ -31,43 +31,43 @@ sudo mv handbrake_wrapper.py /usr/local/bin/hbconvert
 ### Basic (dry run)
 
 ```bash
-hbconvert --start . --ext mkv
+transcode --start . --ext mkv
 ```
 
 ### Recursive conversion
 
 ```bash
-hbconvert --start ~/Videos --ext avi -r
+transcode --start ~/Videos --ext avi -r
 ```
 
 ### Actually run it (commit changes)
 
 ```bash
-hbconvert --start . --ext mkv -r -c
+transcode --start . --ext mkv -r -c
 ```
 
 ### Reprocess all matching files
 
 ```bash
-hbconvert --start . --ext mkv -r -c --reprocess
+transcode --start . --ext mkv -r -c --reprocess
 ```
 
 ### Delete original files after encoding
 
 ```bash
-hbconvert --start . --ext mkv -r -c --delete
+transcode --start . --ext mkv -r -c --delete
 ```
 
 ### Cleanup source files after earlier run
 
 ```bash
-hbconvert --start . --ext mkv -r -c --delete
+transcode --start . --ext mkv -r -c --delete
 ```
 
 ## Help
 
 ```bash
-hbconvert --help
+transcode --help
 ```
 
 ## License
